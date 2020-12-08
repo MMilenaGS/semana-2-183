@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center mb-5">
           <div class="col mt-5" v-for="(item, index) of team" :key="index">
-            <team-card></team-card>
+            <team-card v-bind:member="item"></team-card>
           </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ export default {
           descripcion:
             "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/animals",
         },
         {
           codigo: 2,
@@ -51,7 +51,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/architecture",
         },
         {
           codigo: 4,
@@ -59,7 +59,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/tech",
         },
         {
           codigo: 5,
@@ -67,7 +67,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/nature",
         }
       ]
     }
