@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <div class="container-fluid">
+        
+      <section-api></section-api>
+            
+    </div>
+  
 
     <div class="container-fluid">
         <div class="row justify-content-center mb-5">
@@ -15,16 +21,18 @@
 
 <script>
 
-import PageFooter from './components/PageFooter.vue'
-import TeamCard from './components/TeamCard.vue'
+import PageFooter from './components/PageFooter.vue';
+import TeamCard from './components/TeamCard.vue';
+import SectionApi from './components/SectionApi.vue';
 
 
 export default {
   name: 'App',
   components:{
     PageFooter,
-    TeamCard
-  },
+    TeamCard,
+    SectionApi
+   },
   data(){
     return{
       title : 'Vivo dentro de VUE',
@@ -35,7 +43,7 @@ export default {
           descripcion:
             "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/animals",
+          imagen: "https://placeimg.com/192/192/people",
         },
         {
           codigo: 2,
@@ -43,7 +51,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/animals",
         },
         {
           codigo: 3,
@@ -51,7 +59,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/architecture",
+          imagen: "https://placeimg.com/192/192/tech",
         },
         {
           codigo: 4,
@@ -59,7 +67,7 @@ export default {
           descripcion:
           "lorem ipsum",
           rol: "Desarrollador backend",
-          imagen: "https://placeimg.com/192/192/tech",
+          imagen: "https://placeimg.com/192/192/architecture",
         },
         {
           codigo: 5,
